@@ -1,0 +1,94 @@
+/* abstracts */
+/* Color Scheme */
+/* Typography */
+/* font wieght */
+/* vendors */
+/* base */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* layout */
+.navbar {
+  background-color: #000;
+  position: relative;
+}
+.navbar__logo {
+  position: absolute;
+  margin: 1rem;
+  text-align: center;
+}
+
+.collapsible {
+  text-align: right;
+}
+.collapsible label {
+  display: inline-block;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 1.5em;
+  font-size: 1.8rem;
+}
+
+#clickable {
+  display: none;
+}
+
+input:checked ~ .navbar__container {
+  max-height: 100%;
+}
+
+.navbar__container {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar__list {
+  list-style-type: none;
+}
+
+.navbar__item a {
+  display: block;
+  text-align: left;
+  padding: 0.5em;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+.navbar__item a:hover {
+  color: #FFA500;
+}
+
+@media only screen and (min-width: 768px) {
+  .collapsible label {
+    display: none;
+  }
+
+  .navbar__container {
+    max-height: 100%;
+    padding: 0.5em 3em 0.5em 0;
+    overflow: visible;
+  }
+
+  .navbar__list {
+    display: flex;
+    justify-content: flex-end;
+    margin: inherit;
+    padding: inherit;
+  }
+
+  .navbar__item a {
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+/* components */
+/* pages */
+/* themes */
+
+/*# sourceMappingURL=style.css.map */

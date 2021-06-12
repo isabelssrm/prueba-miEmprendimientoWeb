@@ -1,0 +1,82 @@
+.navbar {
+    background-color: $black;
+    position: relative;
+    &__logo {
+        position: absolute;
+        margin: 1rem;
+        text-align: center;
+    }
+}
+
+.collapsible {
+    text-align: right;
+    label {
+        display: inline-block;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        padding-right: 1.5em;
+        font-size: 1.8rem;
+    }
+}
+
+#clickable {
+    display: none;
+    }
+
+input:checked ~ .navbar__container {
+    max-height: 100%;
+}
+
+.navbar__container {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.navbar__list {
+    list-style-type: none;
+}
+.navbar__item {
+     a {
+        display: block;
+        text-align: left;
+        padding: .5em;
+        font-family: $ubuntu;
+        font-size: 1rem;
+        font-weight: $bold;
+        color: $white;
+        text-decoration: none;
+        &:hover {
+        color: $orange;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .collapsible {
+        label {
+        display: none;
+        }
+    }
+    .navbar__container {
+        max-height: 100%;
+        padding: .5em 3em .5em 0;
+        overflow: visible;
+       
+    }
+
+    .navbar__list {
+        display: flex;
+        justify-content: flex-end;
+        margin: inherit;
+        padding: inherit;
+    }
+
+    .navbar__item {
+        a {
+        padding: .5em 1em;
+        font-size: 1rem;
+        font-weight: $bold;
+        }
+    }
+
+}
