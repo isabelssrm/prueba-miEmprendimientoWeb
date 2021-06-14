@@ -1,0 +1,11 @@
+.button {
+    background-color: $tangerine;
+    border-radius: 5px;
+    padding: 0 .5rem;
+    font-family: $poppins;
+    &:hover {
+        color: $black;
+        background-color: $white;
+    }
+
+}

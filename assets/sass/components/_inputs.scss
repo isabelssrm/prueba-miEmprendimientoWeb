@@ -1,0 +1,7 @@
+input {
+    font-family: $poppins;
+    width: 180px;
+    &:focus {
+        background-color: $tangerine;
+    }
+}

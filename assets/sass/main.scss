@@ -6,11 +6,15 @@
 /* base */
 @import 'base/reset';
 @import 'base/typography';
+@import 'base/animation';
 /* layout */
 @import 'layout/navbar';
 @import 'layout/header';
+@import 'layout/footer';
 /* components */
-
+@import 'components/thumbnail';
+@import 'components/buttons';
+@import 'components/inputs';
 /* pages */
-
+@import 'pages/main-section';
 /* themes */

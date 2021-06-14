@@ -1,4 +1,5 @@
 .navbar {
+    position: fixed;
     background-color: $black;
     position: relative;
     &__logo {
@@ -22,6 +23,12 @@
 #clickable {
     display: none;
     }
+.fa-bars {
+    color: $white; 
+}
+.fa-bars:hover {
+     color: $orange;
+}
 
 input:checked ~ .navbar__container {
     max-height: 100%;

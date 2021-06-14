@@ -1,0 +1,53 @@
+footer {
+    background-color: $sable;
+    width: 100%;
+    padding: 2rem;
+}
+.footer {
+    
+    margin-top: 1rem;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    font-family: $poppins;
+    font-size: $small;
+
+    &__list {
+        display: flex;
+        flex-wrap: nowrap;
+        list-style-type: none;
+        
+    }
+    &__rights{
+        font-size: $x-medium;
+    }
+    &__item {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        cursor: pointer;
+        &:hover{
+            color: $orange;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            padding-bottom: .8rem;
+        }
+        &__rights{
+           text-align: center;
+        }
+    }
+    .button {
+        margin-top: .8rem;
+    }
+}
